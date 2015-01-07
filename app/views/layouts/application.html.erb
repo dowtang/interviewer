@@ -2,15 +2,70 @@
 <html>
 <head>
   <title>Rails Basic Template</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
   <script type="text/javascript" src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
   
   <%= csrf_meta_tags %>
-</head>
-<body class="vertical-center body-background">
 
-<%= yield %>
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+
+</head>
+<body id="page-top" data-spy="scroll" class="body">
+
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+      
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+          <i class="fa fa-bars"></i>
+        </button>
+        
+        <button type="button" class="btn btn-default" aria-label="Left Align" id="finalround-logo">
+          <span class="glyphicon glyphicon-thumbs-up">
+          </span>
+          <span>FinalRound</span>
+        </button>
+
+
+        
+        <a class="navbar-brand page scroll" href="#page-top">
+        </a>
+      </div>
+
+      
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <li class="hidden active">
+            <a href="#page-top"></a>
+          </li>
+          <li class>
+            <a class="page-scroll" href="#about">About</a>
+          </li>
+          <% if current_user %>
+            <li class>
+              <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+            </li>
+            <li class>
+              <%= link_to "Edit", edit_user_path(current_user) %>
+            </li>
+          <% else %>
+            <li>
+              <%= link_to "Sign in", new_user_session_path %>
+            </li>
+            <li>
+              <%= link_to "Sign up", new_user_registration_path %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <%= yield %>
 
 </body>
 </html>

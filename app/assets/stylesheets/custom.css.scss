@@ -1,8 +1,8 @@
-.body-background{
-  /*background-color: #333330;*/
-  background-color: #bfbfbb;
-  /*color: #bfbfbb;*/
-  color: #333330;
+
+#finalround-logo{
+  margin: 8px;
+  background-color: #337ab7;
+  color: white;
 }
 
 .vertical-center {
@@ -12,3 +12,13 @@
   display: flex;
   align-items: center;
 }
+
+
+#title-phrase{
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+}
+

@@ -1,0 +1,44 @@
+<section class="container content-section text-center">
+  <div class="row">
+     
+    <div class="col-lg-8 col-lg-offset-2">
+    <p>Email Address: <%= @user.email %></p>
+
+    <%= simple_form_for @user do |f| %>
+      
+      <%= f.label :first_name %>
+      <%= f.text_field :first_name, :style => "color:black;" %>
+
+      <div class="field">
+        <%= f.label :last_name %>
+        <%= f.text_field :last_name, :style => "color:black;" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :education %>
+        <%= f.text_field :education, :style => "color:black;" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :desired_industry %>
+        <%= f.text_field :desired_industry, :style => "color:black;" %>
+      </div>
+
+      <div class="field">
+      <%= f.label :desired_company %>
+      <%= f.text_field :desired_company, :style => "color:black;" %>
+      </div>
+
+      <div class="field">
+      <%= f.label :previous_work_experiences %>
+      <%= f.text_field :previous_work_experiences, :style => "color:black;" %>
+      </div>
+
+      <%= f.submit "Update" %>
+    <% end %>
+    </div>
+
+   
+
+  </div>
+</section>

@@ -4,13 +4,15 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-body {
+.body {
     width: 100%;
     height: 100%;
-    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #fff;
-    background-color: #000;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: black;
+    background-color: #C7D0D5;
 }
+
+/*#0000 - previous background-color*/
 
 html {
     width: 100%;
@@ -45,7 +47,7 @@ p {
 }
 
 a {
-    color: #219ab3;
+    color: #C7D0D5;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -54,7 +56,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #11505d;
+    color: #C7D0D5;
 }
 
 .light {
@@ -66,7 +68,7 @@ a:focus {
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #000;
+    background-color: #C7D0D5;
 }
 
 .navbar-custom .navbar-brand {
@@ -80,7 +82,7 @@ a:focus {
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
-    color: #fff;
+    color: #C7D0D5;
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
@@ -89,12 +91,12 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #fff;
+    color: black;
 }
 
 .navbar-custom .nav li.active {
     outline: nonte;
-    background-color: rgba(255,255,255,.3);
+    background-color: #C7D0D5;
 }
 
 .navbar-custom .nav li a {
@@ -107,7 +109,7 @@ a:focus {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active {
     outline: 0;
-    background-color: rgba(255,255,255,.3);
+    background-color: #C7D0D5;
 }
 
 @media(min-width:767px) {
@@ -123,7 +125,7 @@ a:focus {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: #000;
+        background-color: #C7D0D5;
     }
 
     .navbar-custom.top-nav-collapse {
@@ -137,7 +139,7 @@ a:focus {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: #fff;
+    color: #C7D0D5;
     background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
@@ -182,7 +184,7 @@ a:focus {
     border: 2px solid #fff;
     border-radius: 35px;
     font-size: 40px;
-    color: #fff;
+    color: #C7D0D5;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
