@@ -4,11 +4,14 @@
 
     <p>First Name: <%= @user.first_name %></p>
     <p>Last Name: <%= @user.last_name %></p>
+    <p>User Type: <%= @user.user_type %></p>
+    <p>Specialty: <%= @user.specialty %></p>
     <p>Education: <%= @user.education %></p>
     <p>Desired Industry: <%= @user.desired_industry %></p>
     <p>Target Company: <%= @user.desired_company %></p>
     <p>Email Address: <%= @user.email %></p>
 
     </div>
+    <%= image_tag @user.avatar.url(:thumb) %> 
   </div>
 </section>

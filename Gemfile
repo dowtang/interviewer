@@ -35,6 +35,14 @@ gem 'simple_form', '~> 3.1.0'
 
 gem 'pry'
 
+gem 'paperclip', github: 'thoughtbot/paperclip'
+
+gem 'aws-sdk', '~> 1.5.7'
+
+gem 'dotenv-rails', :groups => [:development, :test]
+
+gem 'mailboxer'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'

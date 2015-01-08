@@ -7,7 +7,15 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
 
+  get '/about', :to => 'static_pages#about'
 
+  get '/coaches', :to => 'static_pages#coaches'
+
+  get '/software_coaches', :to => 'static_pages#software_coaches'
+
+  get '/consulting_coaches', :to => 'static_pages#consulting_coaches'
+
+  get '/finance_coaches', :to => 'static_pages#finance_coaches'
 
   # get 'users/sign_out' => 'devise/sessions#destroy'
   # Example of regular route:
@@ -23,6 +31,8 @@ Rails.application.routes.draw do
   # resources :users
   resources :messages
   resources :users
+
+  patch'/avatar-upload', :to => 'users#avatar', :as => 'avatar'
 
   # Example resource route with options:
   #   resources :products do

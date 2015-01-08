@@ -8,7 +8,7 @@
     width: 100%;
     height: 100%;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: black;
+    color: white;
     background-color: #C7D0D5;
 }
 
@@ -56,7 +56,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #C7D0D5;
+    color: white;
 }
 
 .light {
@@ -68,7 +68,7 @@ a:focus {
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #C7D0D5;
+    background-color: #337ab7;
 }
 
 .navbar-custom .navbar-brand {
@@ -82,7 +82,7 @@ a:focus {
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
-    color: #C7D0D5;
+    color: white;
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
@@ -92,11 +92,12 @@ a:focus {
 
 .navbar-custom a {
     color: black;
+    font-size: 20px;
 }
 
 .navbar-custom .nav li.active {
     outline: nonte;
-    background-color: #C7D0D5;
+    background-color: white;
 }
 
 .navbar-custom .nav li a {
@@ -109,7 +110,7 @@ a:focus {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active {
     outline: 0;
-    background-color: #C7D0D5;
+    background-color: white;
 }
 
 @media(min-width:767px) {
@@ -125,7 +126,7 @@ a:focus {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: #C7D0D5;
+        background-color: white;
     }
 
     .navbar-custom.top-nav-collapse {
@@ -139,7 +140,7 @@ a:focus {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: #C7D0D5;
+    color: white;
     background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
@@ -147,6 +148,7 @@ a:focus {
     background-size: cover;
     -o-background-size: cover;
 }
+/*#C7D0D5*/
 
 .intro .intro-body {
     display: table-cell;
@@ -184,7 +186,7 @@ a:focus {
     border: 2px solid #fff;
     border-radius: 35px;
     font-size: 40px;
-    color: #C7D0D5;
+    color: white;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;

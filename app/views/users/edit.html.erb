@@ -15,6 +15,16 @@
       </div>
 
       <div class="field">
+        <%= f.label :user_type %>
+        <%= f.text_field :user_type, :style => "color:black;" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :specialty %>
+        <%= f.text_field :specialty, :style => "color:black;" %>
+      </div>
+
+      <div class="field">
         <%= f.label :education %>
         <%= f.text_field :education, :style => "color:black;" %>
       </div>
@@ -37,8 +47,26 @@
       <%= f.submit "Update" %>
     <% end %>
     </div>
-
-   
-
   </div>
+  <div>
+  <%= image_tag @user.avatar.url(:medium) %> 
+  <%= form_for @user, :url => avatar_path, :html => { :multipart => true } do |form| %>
+    <%= form.file_field :avatar %>
+    <%= form.submit "submit" %>
+  <% end %>
+  </div>
+
+  <link rel="stylesheet" href="crocodoc.viewer.min.css" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="crocodoc.viewer.min.js"></script>
+<div class="viewer" style="height: 400px"></div>
+<script type="text/javascript">
+    var viewer = Crocodoc.createViewer('.viewer', {
+        url: 'https://view-api.box.com/1/sessions/3c6abc0dcf35422e8353cf9c27578d5c/assets/'
+    });
+    viewer.load();
+</script>
+
+
+
 </section>
