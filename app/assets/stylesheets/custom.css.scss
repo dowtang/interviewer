@@ -14,6 +14,9 @@
   align-items: center;
 }
 
+#first-page {
+  margin-top: -20px;
+}
 
 .big-picture {
   position: fixed;
@@ -22,7 +25,7 @@
   padding: 100px 0;
   text-align: center;
   color: #fff;
-  background: url('http://i.imgur.com/uPj5gaC.jpg?4') 
+  background: url('http://i.imgur.com/pU1ARza.jpg?1') 
   no-repeat bottom center scroll;
 
   background-color: #000;
@@ -39,13 +42,25 @@
   border-radius: 10px;
 }
 
-#title-phrase{
-  font-size: 30px;
+.inline-block {
+  display: inline-block;
+}
+
+#explanation {
+  color: black;
+}
+
+#eminem {
+  color: black;
+}
+
+.title-shot {
+  line-height: 15px;
+  font-size: 40px;
   letter-spacing: 1px;
-  line-height: 20px;
+  line-height: 50px;
   text-transform: uppercase;
-  color: white;
+  color: black;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  margin-bottom: 150px;
 }
 
